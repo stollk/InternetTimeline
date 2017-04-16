@@ -18,6 +18,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/timelinestyle.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -26,46 +27,88 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Aldrich|Days+One" rel="stylesheet">
     <!-- Icons -->
-    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="container">
-  <!--    <div class="header">
+      <div class="header">
         <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+          <li class="nav-item hidden">
+            <a class="nav-link" href="#home"></a>
           </li>
-          <li>
-            <a class="nav-link" href="#">About</a>
+          <li class="nav-item hidden">
+            <a class="nav-link" href="#timeline"></a>
           </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">InternetTimeline</h3>
-      </div> -->
+      </div>
 
-      <div class="jumbotron">
+      <section class="jumbotron" id="home">
         <h1 class="display-3">A History of the Internet</h1>
         <p class="lead">Explore a timeline of significant events and discoveries in the development of the internet.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Scroll<br><i class="fa fa-chevron-down" aria-hidden="true"></i></a></p>
-      </div>
+        <p><a class="btn btn-lg btn-success scroll" href="#timeline">Scroll<br><i class="fa fa-chevron-down" aria-hidden="true"></i></a></p>
+      </section>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-        </div>
-      </div>
+      <section class="timeline" id="timeline">
+        <ul>
+          <li>
+            <div>
+              <time>1937</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1940</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1943</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1946</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1956</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1957</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1967</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1977</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1985</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2000</time>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2005</time> 
+            </div>
+          </li>
+        </ul>
+      </section>
 
       <div class="footer">
         <p></p>
@@ -105,6 +148,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/timeline.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
