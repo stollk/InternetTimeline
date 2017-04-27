@@ -28,9 +28,33 @@ h1 {
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+#bar{
+  border: 5px solid white;
+  border-radius: 20px;
+  background:#CCCCCC;
+  width:30px;
+  height:1420px;
+  z-index: 2;
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 47.5%;
+}
+#bar-fill{
+  background: #FCA06F;
+  border-radius: 15px;
+  width:20px;
+  height:16%;
+}
+#bar-fill-1{
+  animation: fill 5s 1;
+}
+@keyframes fill {
+    0%   {height: 0%;}
+    100% {height: 16%;}
+}
 .timeline ul {
   padding: 50px 0;
+
 }
 
 .timeline ul li {
