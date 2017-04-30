@@ -43,14 +43,77 @@ $('a[href^="#"]').on('click', function(event) {
 });*/
 // var fill = $("#bar-fill").position();
 // var fillscroll = fill.top();
+$(window).scroll(function() {
+if($('.card1').hasClass('in-view')){
+  $('.card1').addClass('cardfill');
+// }if $(".card2").hasClass("in-view"){
+//   $(".card2").addClass("cardfill");
+// }if $(".card3").hasClass("in-view"){
+//   $(".card3").addClass("cardfill");
+// }if $(".card4").hasClass("in-view"){
+//   $(".card4").addClass("cardfill");
+// }if $(".card5").hasClass("in-view"){
+//   $(".card5").addClass("cardfill");
+// }if $(".card6").hasClass("in-view"){
+//   $(".card6").addClass("cardfill");
+// }if $(".card7").hasClass("in-view"){
+//   $(".card7").addClass("cardfill");
+}else{
+  $('.card1').removeClass('cardfill');
+}
+});
+$(window).scroll(function() {
+  if($('.card2').hasClass('in-view')){
+    $('.card2').addClass('cardfill');
+  }else{
+    $('.card2').removeClass('cardfill');
+  }
+});
+$(window).scroll(function() {
+  if($('.card3').hasClass('in-view')){
+    $('.card3').addClass('cardfill');
+  }else{
+    $('.card3').removeClass('cardfill');
+  }
+});
+$(window).scroll(function() {
+  if($('.card4').hasClass('in-view')){
+    $('.card4').addClass('cardfill');
+  }else{
+    $('.card4').removeClass('cardfill');
+  }
+});
+$(window).scroll(function() {
+  if($('.card5').hasClass('in-view')){
+    $('.card5').addClass('cardfill');
+  }else{
+    $('.card5').removeClass('cardfill');
+  }
+});
+$(window).scroll(function() {
+  if($('.card6').hasClass('in-view')){
+    $('.card6').addClass('cardfill');
+  }else{
+    $('.card6').removeClass('cardfill');
+  }
+});
+$(window).scroll(function() {
+  if($('.card7').hasClass('in-view')){
+    $('.card7').addClass('cardfill');
+  }else{
+    $('.card7').removeClass('cardfill');
+  }
+});
+
 var bottom = $('.card1').position().top + $('.card1').outerHeight(true);
 var topbar = $('#bar').position().top;
 var snapTo = bottom - topbar;
 // console.log(snapTo);
 
 
-$(window).scroll(function(){
-   var newpos = $(document).scrollTop();
+// setInterval(function(){
+  $(window).on('scrollstop',function(){
+  var newpos = $(document).scrollTop();
   //  console.log(newpos);
   var currentfill = $('#bar-fill').position().top + $('#bar-fill').outerHeight(true);
     console.log(currentfill);
@@ -85,6 +148,9 @@ if(windowcenter > currentfill){
            $('#bar-fill').animate({
               height: - previousSnap
            },900)
-       }
+      //  }else {//idk if this helps need something to control how often the variables get updated
+      //        setTimeout(check, 5000); // check again in 5 second
+      }
   }
 });
+// }, 2000);
