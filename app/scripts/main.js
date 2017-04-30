@@ -46,13 +46,45 @@ $('a[href^="#"]').on('click', function(event) {
 var bottom = $('.card1').position().top + $('.card1').outerHeight(true);
 var topbar = $('#bar').position().top;
 var snapTo = bottom - topbar;
-console.log(snapTo);
-var fill = $('#bar-fill');
-var current= fill.position();
+// console.log(snapTo);
+
+
 $(window).scroll(function(){
-  // var newpos = $(document).scrollTop();
-  // console.log(newpos);
+   var newpos = $(document).scrollTop();
+  //  console.log(newpos);
+  var currentfill = $('#bar-fill').position().top + $('#bar-fill').outerHeight(true);
+    console.log(currentfill);
+  var previousSnap = currentfill - topbar;
+  // console.log(previousSnap);
+  var outerHeight = $(window).outerHeight(true);
+  // // console.log(outerHeight);
+  var center = outerHeight/2;
+  // // console.log(center);
+  var windowpos = $(window).scrollTop();
+  var windowcenter = windowpos + center;
+    // console.log(windowpos);
+    console.log(windowcenter);
+if(windowcenter > currentfill){
   $('#bar-fill').animate({
     height: snapTo
-  },5000)
+  },900)
+}else{
+      // var currentfill = $('#bar-fill').position().top + $('#bar-fill').outerHeight(true);
+      // //  console.log(currentfill);
+      // var previousSnap = currentfill - topbar;
+      // // console.log(previousSnap);
+      // var outerHeight = $(window).outerHeight(true);
+      // // // console.log(outerHeight);
+      // var center = outerHeight/2;
+      // // // console.log(center);
+      // var windowpos = $(window).scrollTop();
+      // var windowcenter = windowpos + center;
+      //   console.log(windowpos);
+      //   console.log(windowcenter);
+      if (windowcenter < currentfill){
+           $('#bar-fill').animate({
+              height: - previousSnap
+           },900)
+       }
+  }
 });
