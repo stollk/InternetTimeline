@@ -31,9 +31,36 @@ body {
 .footer {
   padding-top: 1.5rem;
   color: #777;
+  background:  #456990;
+  width:100vw;
+  margin-top:150px;
+  margin-bottom:-60px;
+  padding-top:40px;
+  padding-bottom:20px;
+
 /*  border-top: .05rem solid #e5e5e5; */
 }
+.sources{
+  margin-left:50px;
+  color:white;
+  font-family: 'Aldrich', sans-serif;
+  font-size:24px;
 
+}
+.sources:hover{
+  color:#FCA06F;
+  text-decoration: none;
+}
+.wiki{
+  font-size:8px;
+  font-weight: lighter;
+
+}
+#cc-icon{
+  float:right;
+  background:  #456990;
+  margin-right:50px;
+}
 /* Customize container */
 @media (min-width: 48em) {
 /*  .container {
