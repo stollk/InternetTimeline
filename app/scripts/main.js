@@ -44,6 +44,13 @@ $('a[href^="#"]').on('click', function(event) {
 // var fill = $("#bar-fill").position();
 // var fillscroll = fill.top();
 $(window).scroll(function() {
+  if($('.card0').hasClass('in-view')){
+    $('.card0').addClass('cardfill');
+  }else{
+    $('.card0').removeClass('cardfill');
+  }
+});
+$(window).scroll(function() {
 if($('.card1').hasClass('in-view')){
   $('.card1').addClass('cardfill');
 // }if $(".card2").hasClass("in-view"){
@@ -102,6 +109,13 @@ $(window).scroll(function() {
     $('.card7').addClass('cardfill');
   }else{
     $('.card7').removeClass('cardfill');
+  }
+});
+$(window).scroll(function() {
+  if($('.card8').hasClass('in-view')){
+    $('.card8').addClass('cardfill');
+  }else{
+    $('.card8').removeClass('cardfill');
   }
 });
 
