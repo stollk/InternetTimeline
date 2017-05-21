@@ -51,13 +51,19 @@ body {
   color: white;
   font-family: 'Aldrich', sans-serif;
   height:100vh;
-  padding-top: 20%;
+  padding-top: 15%;
 }
 .jumbotron .btn {
   padding: .75rem 1.5rem;
   font-size: 1.5rem;
   background:#FCA06F;
-  margin-top:40px;
+  margin-top:60px;
+}
+.jumbotron .btn:hover{
+  padding: 20px 40px 20px 40px;
+}
+.lead{
+  padding-top:1%;
 }
 /* Supporting marketing content */
 .marketing {
