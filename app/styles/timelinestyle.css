@@ -55,6 +55,18 @@ h1 {
 .info{
   font-size: 1.1rem;
 }
+.popover{
+  color:#456990;
+  font-weight: bold;
+  border:5px solid white;
+  background: #CCCCCC;
+}
+.fa-plus-circle{
+  color:white;
+}
+.fa-plus-circle:hover{
+  font-size:30px;
+}
 .define:hover{
   color:#FCA06F;
   text-decoration: none;

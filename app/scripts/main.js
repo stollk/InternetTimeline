@@ -154,3 +154,6 @@ if(windowcenter > currentfill){
   }
 });
 // }, 2000);
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
