@@ -56,6 +56,10 @@ body {
   font-weight: lighter;
 
 }
+a.active.focus, a.active:focus, a.focus, a:active.focus, a:active:focus, a:focus {
+    color:#FCA06F;
+    text-decoration: none;
+}
 #cc-icon{
   float:right;
   background:  #456990;
@@ -85,6 +89,10 @@ body {
   font-size: 1.5rem;
   background:#FCA06F;
   margin-top:60px;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+    color:white;
 }
 .jumbotron .btn:hover{
   padding: 20px 40px 20px 40px;
